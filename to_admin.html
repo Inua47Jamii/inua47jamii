@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password to Open Link</title>
+    <link rel="stylesheet" href="to_admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Password to Access the Link</h1>
+
+        <!-- Password input -->
+        <input type="text" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+
+        <!-- Hidden link that will be displayed after correct password -->
+        <div id="link" style="display:none;">
+            <p>Congratulations! Click the link below to proceed:</p>
+            <a href="admin.php" target="_blank">Go to Admin page</a>
+        </div>
+    </div>
+
+    <script src="to_admin.js"></script>
+</body>
+</html>

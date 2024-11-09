@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inua Jamii Kenya</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="county.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.jpeg" alt="Inua Jamii Logo" class="logo">
+        <h1>Inua Jamii Kenya</h1>
+
+        
+    </header>
+
+    <!-- Scrolling Text -->
+    <div class="marquee">
+        <p>Grab the opportunity! It only applicable to Kenyans</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <p class="mot">We now bring a more convenient way to fight unemployment in every county among the citizens, especially the youths.</p>
+        <section>
+            <h2>About the Program</h2>
+            <p>This service is a collection of small business opportunities around the country in the 47 counties and will run for one month for applications...</p>
+            <p>It is now open from <strong>11<sup>th</sup> Nov 2024 to 10<sup>th</sup> Dec 2024</strong>.</p>
+            <p>The application is paperless and doesn’t require more certificates. ID/Maisha card is mandatory.</p>
+        </section>
+
+       <a href="county.php">apply here</a>
+
+        <!-- Contacts Section -->
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <div class="contact-buttons">
+                <a href="mailto:Inua47jamii.kenya@gmail.com" class="contact-button">Email</a>
+                <a href="#top" onclick="scrollToTop()" class="contact-button">Website</a>
+                <a href="javascript:void(0)" onclick="initiateCall()" class="contact-button">Call</a>
+            </div>
+        </section>
+
+        <!-- Partner Companies Section -->
+<section id="partners">
+    <h2>Our Partnering Companies</h2>
+    <div class="partner-logos">
+        <div class="partner">
+            <img src="shofco.jpg" alt="">
+
+        </div>
+        <div class="partner">
+            <img src="mentorship.jpg" alt="">
+            
+        </div>
+        <div class="partner">
+            <img src="safcom.jpg" alt="">
+
+        </div>
+        <!-- Add more partners as needed -->
+    </div>
+</section>
+
+        <!-- Comment Section -->
+        <section id="comments">
+            <h2>Applicants' Comments</h2>
+            
+            <!-- Form for user-submitted comments -->
+            <form id="commentForm" onsubmit="addUserComment(event)">
+                <label for="commentName">Name:</label>
+                <input type="text" id="commentName" required>
+
+
+                <label for="commentName">Phone No.</label>
+                <input type="text" id="commentName" required>
+
+                <label for="commentText">Comment:</label>
+                <textarea id="commentText" required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+
+            <!-- Display User Comments -->
+            <div class="user-comments" id="userCommentsContainer"></div>
+            
+            <!-- Pre-made Comments Section -->
+            <h2>Highlighted Comments</h2>
+            <div class="premade-comments" id="premadeCommentsContainer">
+                <!-- Pre-made comments go here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved. &copy; <a href="to_admin.html">Copyright 2024</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.logo {
+    height: 90px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    color: #4CAF50;
+    /* Green */
+    float: right;
+}
+
+header a {
+    color: #fff;
+}
+
+.marquee {
+    background-color: #096109;
+    /* Red */
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.marquee p {
+    animation: scroll 8s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #fff;
+    /* Green */
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-button i {
+    color: #fff;
+    /* Icon color */
+}
+
+.contact-button:hover {
+    color: #fff;
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    margin-top: 10px;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#commentSection {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#commentSection h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Basic styling for comments */
+
+
+/* Comment content styling */
+.comment p {
+    margin: 5px 0;
+}
+
+
+/* Comments Section */
+#comments {
+    padding: 20px;
+
+}
+
+.premade-comments {
+    display: grid;
+    grid-gap: 10px;
+
+    border: 1px solid #ddd;
+}
+
+/* Two columns for large screens, two rows for smaller screens */
+@media (min-width: 768px) {
+    .premade-comments {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .premade-comments {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+/* Individual comment styling */
+.comment {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.time-ago {
+    color: gray;
+    font-size: 0.9em;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141614cc;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Partner Companies Section */
+#partners {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 3px solid #006400;
+    overflow: hidden;
+}
+
+#partners h2 {
+    color: #006400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    gap: 20px;
+    animation: scrollLogos 20s linear infinite;
+}
+
+.partner {
+    width: 150px;
+    text-align: center;
+}
+
+.partner img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #006400;
+    border-radius: 8px;
+}
+
+.partner p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Scrolling Animation */
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partner-logos {
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 15px;
+        animation: none; /* Disable scrolling on smaller screens */
+    }
+}

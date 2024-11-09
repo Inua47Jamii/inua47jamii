@@ -1,0 +1,161 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Partner Companies Section */
+#partners {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 3px solid #006400;
+}
+
+#partners h2 {
+    color: #006400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling for each partner logo and description */
+.partner {
+    width: 150px;
+    text-align: center;
+}
+
+.partner img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #006400;
+    border-radius: 8px;
+}
+
+.partner p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partner-logos {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .partner-logos {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
